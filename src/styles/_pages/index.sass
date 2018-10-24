@@ -1,0 +1,611 @@
+header
+	background: white
+	// Mobile
+	nav
+		ul
+			li
+				display: inline-block
+				margin: 10px 5px
+				list-style-type: none
+				a
+					position: relative
+					text-decoration: none
+					background: black
+					padding: 10px 5px
+					color: white
+					border-radius: 7px
+					&:hover
+						text-decoration: none
+						color: white
+					&:before
+						content: ''
+						display: block
+						position: absolute
+						width: 10px
+						height: 10px
+						background: black
+						top: 0
+						right: 0
+					&:after
+						content: ''
+						display: block
+						position: absolute
+						width: 10px
+						height: 10px
+						background: black
+						bottom: 0
+						left: 0
+					
+		// Tablet
+		+media-breakpoint-up(md)
+			ul
+				li
+					display: inline-block
+					margin: 10px 5px
+					list-style-type: none
+					a
+						&:before
+							opacity: 0
+						&:after
+							opacity: 0
+						background: white
+						color: black
+						&:hover,&:active
+							position: relative
+							text-decoration: none
+							background: black
+							padding: 10px 5px
+							color: white
+							border-radius: 7px
+							&:before
+								opacity: 1
+							&:after
+								opacity: 1
+	
+body
+	background: black
+	// Mobile
+	.banner1
+		.item
+			figure
+				.box-img-banner1
+					position: relative
+					img
+						max-width: 100%
+						width: 100%
+					span
+						&:before
+							content: ''
+							display: block
+							position: absolute
+							width: 100%
+							height: 2px
+							background: white
+							top: 0
+							left: 0
+						&:after
+							content: ''
+							display: block
+							position: absolute
+							width: 100%
+							height: 2px
+							background: white
+							bottom: 0
+							left: 0
+
+				figcaption
+					color: white
+					h2 
+						font-size: 1.5rem
+					button
+						text-transform: uppercase
+		// Tablet
+		+media-breakpoint-up(md)
+			.item
+				figure
+					.box-img-banner1
+						position: relative
+					figcaption
+						position: absolute
+						top: 0
+						left: 0
+						width: 35%
+						padding-left: 2rem
+						transform: translateY(40%)
+		//Laptop
+		+media-breakpoint-up(lg)
+			.item
+				figure
+					.box-img-banner1
+						position: relative
+					figcaption
+						position: absolute
+						top: 0
+						left: 0
+						width: 35%
+						padding-left: 2rem
+						transform: translateY(100%)
+						button
+							text-transform: uppercase
+		//Laptop L
+		+media-breakpoint-up(xl)
+			.item
+				figure
+					.box-img-banner1
+						position: relative
+					figcaption
+						position: absolute
+						top: 0
+						left: 0
+						width: 35%
+						padding-left: 2rem
+						transform: translateY(100%)
+						h2 
+							font-size: 2rem
+						p 
+							font-size: 1.5rem
+						button
+							width: 14rem
+							height: 4rem
+							font-size: 2rem
+							text-transform: uppercase
+	.banner2
+		//Mobile
+		.owl-carousel.owl-theme
+			.item
+				.container
+					.row
+						.col
+							figure
+								.box-img-banner2
+									img
+										max-width: 100%
+										width: 100%
+								figcaption
+									text-align: center
+									h5 
+										background: black
+										color: white
+										padding: 5px
+									.btn-warning
+										font-weight: bold
+										background: yellow
+			.owl-dots 
+				.owl-dot.active
+					span
+						background: yellow
+		//Tablet
+		+media-breakpoint-up(md)
+			.owl-carousel.owl-theme
+				.item
+					.container
+						.row
+							.col
+								figure
+									position: relative
+									figcaption
+										position: absolute
+										top: 0
+										left: 0
+		//Laptop 
+		+media-breakpoint-up(lg)
+			.owl-carousel.owl-theme
+				.item
+					.container
+						.row
+							.col
+								figure
+									position: relative
+									figcaption
+										position: absolute
+										top: 0
+										left: 0	
+										transform: translateY(30%)
+										h5 
+											font-size: 1.5rem
+				.owl-dots 
+					margin: 0
+					position: absolute
+					bottom: 10px
+					left: 33rem
+					.owl-dot
+						span
+							width: 25px
+							height: 5px
+							border-radius: 0.25rem
+		//Laptop L
+		+media-breakpoint-up(xl)
+			.owl-carousel.owl-theme
+				.item
+					.container
+						.row
+							.col
+								figure
+									position: relative
+									figcaption
+										position: absolute
+										top: 0
+										left: 0	
+										transform: translateY(30%)
+										h5 
+											font-size: 2rem
+										.btn-warning
+											height: 3rem
+											width: 14rem
+											font-size: 1.2rem
+				.owl-dots 
+					margin: 0
+					position: absolute
+					bottom: 10px
+					left: 47rem
+					.owl-dot 
+						span
+							width: 25px
+							height: 5px
+							border-radius: 0.25rem
+	.product
+		//Mobile
+		p.text
+			position: relative
+			b
+				color: white
+				background: black
+				padding: 10px
+			&:before
+				content: ''
+				display: block
+				height: 2px
+				width: 100%
+				position: absolute
+				top: 10px
+				left: 0
+				background: white
+				z-index: -1
+		figure
+			.box-img-pro
+				position: relative
+				img 
+					max-width: 100%
+					width: 100%
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					left: 0
+					top: 0
+					width: 100%
+					height: 100%
+					box-shadow: 0 0 0 5px yellow inset
+			figcaption
+				h6 
+					color: yellow
+				p
+					color: #3498db
+					font-weight: bold
+		//Tablet
+		+media-breakpoint-up(md)
+			p.text
+				b 
+					font-size: 1.5rem
+				&:before
+					top: 15px
+			figure
+				.box-img-pro
+					img 
+						filter: grayscale(100%)
+					&:after
+						opacity: 0
+				figcaption
+					h6 
+						color: white
+					p
+						color: lighten(black,40%)
+				&:hover,&:active
+					.box-img-pro
+						&:after
+							opacity: 1
+						img
+							filter: grayscale(0)
+					figcaption
+						h6 
+							color: yellow
+						p
+							color: #3498db
+		+media-breakpoint-up(lg)
+			p.text
+				b 
+					font-size: 2rem
+				&:before
+					top: 20px
+	.sale
+		// Mobile
+		figure
+			.box-img-sale
+				position: relative
+				img
+					max-width: 100%
+					width: 100%
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					left: 0
+					top: 0
+					width: 100%
+					height: 100%
+					box-shadow: 0 0 0 5px white inset
+			figcaption
+				position: relative
+				h4 
+					color: white
+					font-size: 1.25rem
+				b
+					background: yellow
+					padding: 5px
+				p 
+					display: block
+					position: absolute
+					top: 0
+					right: 0
+					background: black
+					width: 3.5rem
+					border: 2px cyan solid
+					border-radius: 50%
+					color: yellow
+		// Tablet
+		+media-breakpoint-up(md)
+			figure
+				position: relative
+				figcaption
+					h4 
+						position: absolute
+						bottom: 9rem
+						left: 50%
+						transform: translateX(-50%)
+						background: black
+						padding: 5px 10px 20px 10px
+						font-size: 1.5rem
+					b
+						background: yellow
+						padding: 5px
+						position: absolute
+						bottom: 9rem
+						left: 50%
+						transform: translateX(-50%)
+					p
+						top: -19rem
+						right: 1rem
+		//Laptop
+		+media-breakpoint-up(lg)
+			figure 
+				figcaption
+					h4 
+						font-size: 2rem
+					b 
+						font-size: 1.2rem
+					p 
+						top: -25rem
+		//Laptop L
+		+media-breakpoint-up(xl)
+			figure 
+				figcaption
+					h4 
+						font-size: 2.5rem
+					b 
+						font-size: 1.3rem
+					p 
+						top: -30rem
+	.intro
+		//Mobile
+		.set-img
+			figure
+				.box-img-intro
+					position: relative
+					img
+						max-width: 100%
+						width: 100%
+					&:after
+						content: ''
+						display: block
+						position: absolute
+						left: 0
+						top: 0
+						width: 100%
+						height: 100%
+						box-shadow: 0 0 0 3px white inset
+		.set-text
+			.box-text
+				position: relative
+				border: 5px yellow solid
+				color: white
+				b 
+					position: absolute
+					border: 5px yellow solid
+					background: #34495e
+					top: -20px
+					left: 60px
+					padding: 5px
+				p 
+					margin-top: 2.3rem
+		//Tablet
+		+media-breakpoint-up(md)
+			.set-text
+				.box-text
+					b 
+						left: 130px
+					p 
+						padding: 0 2rem
+		//Laptop
+		+media-breakpoint-up(lg)
+			.set-text
+				.box-text
+					b 
+						font-size: 1.7rem
+						top: -30px
+						left: 170px
+					p 
+						font-size: 1.5rem
+						padding-top: 1rem
+		//Laptop L
+		+media-breakpoint-up(xl)
+			.set-text
+				.box-text
+					b 
+						left: 200px
+					p 
+						padding: 1.9rem
+	.slider
+		// Mobile
+		p.text
+			position: relative
+			b
+				color: white
+				background: black
+				padding: 10px
+			&:before
+				content: ''
+				display: block
+				height: 2px
+				width: 100%
+				position: absolute
+				top: 10px
+				left: 0
+				background: white
+				z-index: -1
+		.slide
+			position: relative
+			.owl-carousel
+				.items
+					img 
+						max-width: 100%
+						width: 100%
+						filter: grayscale(100%)
+				.owl-dots 
+					.owl-dot.active
+						span
+							background: yellow
+				.owl-nav
+					.owl-prev
+						width: 2rem
+						height: 2rem
+						background: #2c3e50
+						position: absolute
+						bottom: 1.3rem
+						left: -3rem
+						color: #dfdfdf
+						&:hover,&:active
+							background: yellow
+							i
+								color: black
+					.owl-next
+						width: 2rem
+						height: 2rem
+						background: #2c3e50
+						position: absolute
+						bottom: 1.3rem
+						right: -3rem
+						color: #dfdfdf
+						&:hover,&:active
+							background: yellow
+							i
+								color: black
+		// Tablet
+		+media-breakpoint-up(md)
+			p.text
+				b 
+					font-size: 1.5rem
+				&:before
+					top: 15px
+			
+		// Laptop
+		+media-breakpoint-up(lg)
+			p.text
+				b 
+					font-size: 2rem
+				&:before
+					top: 20px
+	.infor
+		background: gray
+		color: lighten(black,20%)
+		.container
+			display: flex
+			align-items: center
+			justify-content: center
+			.text
+				h5 
+					color: yellow
+					font-weight: bold
+				margin-top: 1rem
+				margin-bottom: 1rem
+			.text3
+				margin-top: 1rem
+			.set-icon
+				.fa.fa-twitter
+					width: 3rem
+					height: 3rem
+					background: gray
+					border-radius: 50%
+					position: relative
+					color: black
+					background: yellow
+					margin: .5rem .5rem
+					&:before
+						position: absolute
+						bottom: 14px
+						right: 14px
+				.fa.fa-facebook
+					width: 3rem
+					height: 3rem
+					background: gray
+					border-radius: 50%
+					position: relative
+					color: black
+					background: yellow
+					margin: .5rem .5rem
+					&:before
+						position: absolute
+						bottom: 14px
+						right: 17px
+			+media-breakpoint-up(md)
+				.text3
+					margin-top: 3.5rem
+				.set-icon
+					margin-top: 6rem
+					.fa.fa-twitter
+						background: #34495e
+						color: white
+						&:hover,&:active
+							background: yellow
+							color: black
+					.fa.fa-facebook
+						background: #34495e
+						color: white
+						&:hover,&:active
+							background: yellow
+							color: black
+							
+footer
+	background: yellow
+	.copyright
+		display: flex
+		align-items: center
+		justify-content: center
+	+media-breakpoint-up(md)
+		.form
+			form
+				.form-group
+					label
+						font-size: 1.5rem
+						font-weight: bold
+					.form-control
+						position: relative
+						margin-bottom: 2rem
+					button
+						position: absolute
+						width: 5rem
+						height: 2rem
+						top: 55px
+						right: 18px
+						color: white
+						font-size: 1rem
+						text-align: center

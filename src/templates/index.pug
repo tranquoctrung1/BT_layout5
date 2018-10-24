@@ -1,0 +1,184 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	section.banner1
+		.owl-carousel.owl-theme
+			.item
+				figure
+					.box-img-banner1
+						img(src="./img/home_banner01.png", alt="", srcset="")
+						span
+					figcaption.text-center
+						h2.mt-2 Chúng tôi là FullStack Việt Nam
+						p.mt-3.ml-2.mr-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, odio eum exercitationem maxime eius sequi nihil
+						button.btn.btn-light(type="button") Xem Chi Tiết
+			.item
+				figure
+					.box-img-banner1
+						img(src="./img/home_banner01.png", alt="", srcset="")
+						span
+					figcaption
+						h2.mt-2 Chúng tôi là FullStack Việt Nam
+						p.mt-3.ml-2.mr-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, odio eum exercitationem maxime eius sequi nihil
+						button.btn.btn-light(type="button") Xem Chi Tiết
+			.item
+				figure
+					.box-img-banner1
+						img(src="./img/home_banner01.png", alt="", srcset="")
+						span
+					figcaption.text-center
+						h2.mt-2 Chúng tôi là FullStack Việt Nam
+						p.mt-3.ml-2.mr-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel, odio eum exercitationem maxime eius sequi nihil
+						button.btn.btn-light(type="button") Xem Chi Tiết
+	section.banner2
+		.owl-carousel.owl-theme.mt-5
+			.item
+				.container
+					.row
+						.col
+							figure
+								.box-img-banner2
+									img(src="./img/home_slider_banner.png", alt="", srcset="")
+								figcaption.text-center
+									h5.mt-3.mb-3 USA'S HOTTEST JEANS
+									button.btn.btn-warning(type="button") SHOPPING NOW
+			.item
+				.container
+					.row
+						.col
+							figure
+								.box-img-banner2
+									img(src="./img/home_slider_banner.png", alt="", srcset="")
+								figcaption.text-center
+									h5.mt-3.mb-3 USA'S HOTTEST JEANS
+									button.btn.btn-warning(type="button") SHOPPING NOW
+			.item
+				.container
+					.row
+						.col
+							figure
+								.box-img-banner2
+									img(src="./img/home_slider_banner.png", alt="", srcset="")
+								figcaption.text-center
+									h5.mt-3.mb-3 USA'S HOTTEST JEANS
+									button.btn.btn-warning(type="button") SHOPPING NOW
+	section.product.mt-5
+		.container
+			.row.text-center
+				.col
+					p.text
+						b.mb-5 FULLSTACK VIỆT NAM
+			.row.mt-4
+				.col-6.col-md-3
+					figure
+						.box-img-pro
+							img(src="./img/home_product01.png", alt="", srcset="")
+						figcaption
+							h6.mt-3 TRUNG TÂM ĐÀO TẠO IT CHUYÊN NGHIỆP
+							p $36.59
+				.col-6.col-md-3
+					figure
+						.box-img-pro
+							img(src="./img/home_product02.png", alt="", srcset="")
+						figcaption
+							h6.mt-3 TRUNG TÂM ĐÀO TẠO IT CHUYÊN NGHIỆP
+							p $36.59
+				.col-6.col-md-3
+					figure
+						.box-img-pro
+							img(src="./img/home_product03.png", alt="", srcset="")
+						figcaption
+							h6.mt-3 TRUNG TÂM ĐÀO TẠO IT CHUYÊN NGHIỆP
+							p $36.59
+				.col-6.col-md-3
+					figure
+						.box-img-pro
+							img(src="./img/home_product04.png", alt="", srcset="")
+						figcaption
+							h6.mt-3 TRUNG TÂM ĐÀO TẠO IT CHUYÊN NGHIỆP
+							p $36.59
+	section.sale
+		.container.mt-5
+			.row
+				.col
+					figure
+						.box-img-sale
+							img(src="./img/home_banner02.png", alt="", srcset="")
+						figcaption
+							h4.mt-3.mb-3 HẠNH PHÚC PHÍA SAU
+							b USA'S HOTTEST JEANS
+							p.text-center
+								span Sale 20%
+	section.intro
+		.container
+			.row
+				.col-md-4.mt-5.set-img
+					figure
+						.box-img-intro
+							img(src="./img/home_intro.png", alt="", srcset="")
+				.col-md-8.mt-5.set-text.text-center
+					.box-text
+						b HẠNH PHÚC PHÍA SAU
+						p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est recusandae eos quibusdam voluptas hic labore quos obcaecati, architecto corporis commodi unde doloribus? Provident sequi sapiente sed odio ipsa aut! Error.
+	section.slider
+		.container
+			.row.text-center
+				.col.mt-4
+					p.text
+						b.mb-5 FULLSTACK VIỆT NAM
+			.row
+				.col
+					.slide.pb-4.mt-4
+							.owl-carousel.owl-theme
+								.items
+									img.img-fluid(src="./img/home_slider06.png", alt="", srcset="")
+								.items
+									img.img-fluid(src="./img/home_slider05.png", alt="", srcset="")
+								.items
+									img.img-fluid(src="./img/home_slider04.png", alt="", srcset="")
+								.items
+									img.img-fluid(src="./img/home_slider03.png", alt="", srcset="")
+								.items
+									img.img-fluid(src="./img/home_slider02.png", alt="", srcset="")
+								.items
+									img.img-fluid(src="./img/home_slider01.png", alt="", srcset="")
+	section.infor
+		.container.mt-4
+			.row
+				.col-md-3.text
+					h5 FULLSTACK VIỆT NAM
+					p.mt-3 Mobile:(+84) 969689893
+						br
+						|Email: admin@fullstackvietnam.com
+						br
+						|Địa chỉ: 28 đường số 2 - CYTI LAND - Phường 7 - Quận Gò Vấp - TPHCM
+				.col-md-3.text
+					h5 LINK
+					p.mt-3 Khoá học FrontEnd Master
+						br
+						|Khoá học FullStack Developer
+						br
+						|Khoá học Design chuyên nghiệp 
+						br
+						|Lịch khai giảng
+						br
+						|Đăng ký khoá học
+				.col-md-3.text3
+					p Khoá học FrontEnd Master
+						br
+						|Khoá học FullStack Developer
+						br
+						|Khoá học Design chuyên nghiệp 
+						br
+						|Lịch khai giảng
+						br
+						|Đăng ký khoá học
+				.col-md-3.set-icon
+					i.fa.fa-twitter(aria-hidden="true")
+					i.fa.fa-facebook(aria-hidden="true")
+
